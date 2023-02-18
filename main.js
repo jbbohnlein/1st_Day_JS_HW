@@ -44,3 +44,46 @@ console.log(replaceEvens(arr))
 // //Expected output
 // //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 // //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
+
+
+
+
+//=============================================================================
+// Codewars Revisited:
+// #1: Complete the function that takes a non-negative integer n as input, and returns a list of 
+// all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+
+function powersOfTwo(n){
+  let arr = [];
+  for(let i = 0; i <= n; i++) {
+    arr.push(2 ** i);
+  }
+  return arr;
+}
+
+// #2 
+// In JavaScript, your code is running in a function, let us step by step complete your first JS function.
+
+function helloWorld(){
+  let str = "Hello World!"
+  console.log(str)
+}
+
+// #3
+// Is n divisible by x and y?
+// Create a function that checks if a number n is divisible by two numbers x AND y. 
+// All inputs are positive, non-zero numbers.
+
+function isDivisible(n, x, y) {
+    return (n%x)==0 && (n%y) == 0;
+}
+
+
+// #4 
+// Grasshopper - Check for factor
+// This function should test if the factor is a factor of base.
+// Return true if it is a factor or false if it is not.
+
+function checkForFactor (base, factor) {
+    return base % factor ==0;
+  }
